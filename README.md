@@ -1,4 +1,4 @@
-# ReleaseContainerSample
+# ReleaseContainerSample [![Docker Image CI](https://github.com/NikiforovAll/docker-release-container-sample/actions/workflows/docker-image.yml/badge.svg)](https://github.com/NikiforovAll/docker-release-container-sample/actions/workflows/docker-image.yml)
 
 This is an example of how to prepare release container that pushes to private CodeArtifact repository.
 
