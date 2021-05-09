@@ -9,7 +9,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2CA31B39
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReleaseContainerSample", "src\ReleaseContainerSample\ReleaseContainerSample.csproj", "{9C2EB772-733E-4824-A775-2EB3EFDA5483}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReleaseContainerSample.Tests", "ReleaseContainerSample.Tests\ReleaseContainerSample.Tests.csproj", "{9A7132C2-96FC-43B7-8F78-6A634877069D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{7722B035-DF71-4CEF-AD23-95FA0AB8932E}"
+	ProjectSection(SolutionItems) = preProject
+		publish-nuget.sh = publish-nuget.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5CF3EFD7-F46F-4742-ADBB-E0C0ED98005F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReleaseContainerSample.Tests", "tests\ReleaseContainerSample.Tests\ReleaseContainerSample.Tests.csproj", "{841F2EF9-5027-4FB5-9B0E-A7E36CD40CA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,17 +32,17 @@ Global
 		{9C2EB772-733E-4824-A775-2EB3EFDA5483}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C2EB772-733E-4824-A775-2EB3EFDA5483}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C2EB772-733E-4824-A775-2EB3EFDA5483}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A7132C2-96FC-43B7-8F78-6A634877069D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A7132C2-96FC-43B7-8F78-6A634877069D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A7132C2-96FC-43B7-8F78-6A634877069D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A7132C2-96FC-43B7-8F78-6A634877069D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841F2EF9-5027-4FB5-9B0E-A7E36CD40CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841F2EF9-5027-4FB5-9B0E-A7E36CD40CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841F2EF9-5027-4FB5-9B0E-A7E36CD40CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841F2EF9-5027-4FB5-9B0E-A7E36CD40CA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9C2EB772-733E-4824-A775-2EB3EFDA5483} = {EAAA5761-8A85-4703-A6B7-661C19A13C47}
-		{9A7132C2-96FC-43B7-8F78-6A634877069D} = {2CA31B39-2DB3-488D-96A1-7EC6F92D8A4A}
+		{841F2EF9-5027-4FB5-9B0E-A7E36CD40CA7} = {2CA31B39-2DB3-488D-96A1-7EC6F92D8A4A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22159B1F-0407-45EB-B787-8BE0824F2E92}

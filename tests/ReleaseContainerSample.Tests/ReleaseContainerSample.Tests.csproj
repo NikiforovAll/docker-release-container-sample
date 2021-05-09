@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\ReleaseContainerSample\ReleaseContainerSample.csproj" />
+    <ProjectReference Include="..\..\src\ReleaseContainerSample\ReleaseContainerSample.csproj" />
   </ItemGroup>
 
 </Project>

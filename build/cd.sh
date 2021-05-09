@@ -1,14 +1,19 @@
 #!/bin/bash
-
 SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 cd $SCRIPTPATH/..
 
-Version=docker run --rm -v "$(pwd):/repo" gittools/gitversion:5.6.6 /repo \
+Version=`docker run --rm -v "$(pwd):/repo" gittools/gitversion:5.6.6 /repo \
     | tr { '\n' | tr , '\n' | tr } '\n' \
     | grep "NuGetVersion" \
-    | awk -F'"' '{print $4}' | head -n1
-    
+    | awk -F'"' '{print $4}' | head -n1`
+
+echo "Version: $Version"
+
+docker build -f ./src/ReleaseContainerSample/Dockerfile \
+    --build-arg Version="$Version" \
+    -t release-container-example .
+
 docker run --rm \
     -e AWS_ACCESS_KEY_ID="" \
     -e AWS_SECRET_ACCESS_KEY="" \
